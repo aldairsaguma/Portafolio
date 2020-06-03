@@ -1,0 +1,29 @@
+#nav-header {
+  display: flex;
+}
+#nav-header #inicio {
+  display: block;
+  font-size: 1.5rem;
+}
+#nav-header .ul-header {
+  display: flex;
+  padding-left: 0px;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  width: 100%;
+}
+#nav-header .ul-header li {
+  font-size: 1.5rem;
+  width: 100%;
+  text-align: center;
+}
+#nav-header .ul-header li a {
+  text-decoration: none;
+  color: #fff;
+}
+#section-home {
+  max-width: 1920px;
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: border-box;
+}
