@@ -7,6 +7,9 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  background: #f3f3f3;
+  font-family: 'Open Sans', sans-serif;
+  max-width: 1920px;
 }
 .body {
   flex: 1 0 auto;
@@ -21,6 +24,7 @@ body {
 }
 #nav-header .ul-header {
   display: flex;
+  flex-direction: column;
   padding-left: 0px;
   margin-bottom: 1rem;
   margin-top: 1rem;
@@ -30,13 +34,16 @@ body {
   font-size: 1.5rem;
   width: 100%;
   text-align: center;
+  list-style: none;
 }
 #nav-header .ul-header li a {
   text-decoration: none;
   color: #fff;
 }
+#nav-header .ul-header li span {
+  color: #fff;
+}
 .body #section-home {
-  max-width: 1920px;
   margin-right: auto;
   margin-left: auto;
   box-sizing: border-box;
@@ -89,38 +96,39 @@ body {
   background: #4dabf7 !important;
 }
 #section-footer {
-  background: #212121;
   padding-top: 30px;
   padding-bottom: 30px;
 }
-#section-footer .div-contacto {
+#section-footer .redes-sociales {
   display: flex;
-  flex-direction: column;
-}
-#section-footer .div-contacto div:first-child {
-  text-align: center;
-}
-#section-footer .div-contacto div:first-child .titulo-contacto {
-  font-size: 2rem;
-  color: #fff;
-}
-#section-footer .div-email {
-  text-align: center;
-  font-size: 1.2rem;
-  font-weight: 500;
-  height: 100%;
-  display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
 }
-#section-footer .div-email span a {
+#section-footer .redes-sociales a {
+  width: 60px;
+  height: 60px;
+  display: block;
+  border-radius: 100px;
+  text-align: center;
+  margin: 20px;
+}
+#section-footer .redes-sociales i {
+  font-size: 1.3rem;
   color: #fff;
+  line-height: 60px;
 }
 #section-footer .redes-sociales .linkedin {
-  color: #fff;
   text-align: center;
 }
-#section-footer .redes-sociales .linkedin i {
-  font-size: 4rem;
-  color: #0077b5;
+#section-footer .redes-sociales .linkedin a {
+  background: #0077b5;
+}
+#section-footer .redes-sociales .instagram a {
+  background: #c13584;
+}
+#section-footer .redes-sociales .correo a {
+  background: #1279D5;
+}
+#section-footer .bottom-footer a {
+  color: #000;
 }
