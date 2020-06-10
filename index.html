@@ -13,9 +13,10 @@
 	<link rel="stylesheet" type="text/css" href="css/style/style.css">
 	<!-- Font awesome -->
 	<link rel="stylesheet" href="css/fonts/css/all.min.css">
-
 	<!-- Fuentes de google -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+	<!-- LightBox -->
+	<link rel="stylesheet" type="text/css" href="js/lightbox/css/lightbox.min.css">
 
 	<!-- Owl carrousel -->
 	<link rel="stylesheet" href="js/owlcarrousel/css/owl.carousel.min.css">
@@ -28,6 +29,12 @@
 	<script src="js/popper.min.js"></script>
 	<!-- Owl carrousel -->
 	<script src="js/owlcarrousel/js/owl.carousel.min.js"></script>
+	<!-- LightBox -->
+	<!-- si no hay jquery -->
+	<!-- <script src="js/lightbox/js/lightbox-plus-jquery.min.js"></script> -->
+	<script src="js/lightbox/js/lightbox.min.js"></script>
+	<!-- mi script -->
+	<script src="js/app.js"></script>
 </head>
 <body>
 	<header>
@@ -58,7 +65,7 @@
 			<div class="container" id="galeria">
 				<div class="row">
 					<div class="col-lg-12">
-						<h2 class="h2 gallery-title">GALERÍA - CARROUSEL</h2>
+						<h2 class="h2 gallery-title">Carrousel con OwlCarrousel</h2>
 					</div>		
 					<div class="col-lg-12">
 						<div class="owl-carousel" id="owl-carrousel-gallery">
@@ -73,6 +80,43 @@
 						  <div><img src="images/persona2.png" alt=""></div>
 						</div>
 					</div>
+				</div>
+			</div>
+		</section>
+		<section id="section-gallery-lightbox">
+			<div id="gallery-title">
+				<h2>Galería con LightBox</h2>
+			</div>
+			<div id="gallery-container">
+				<div class="gallery-card">
+					<a href="images/lightbox/img-1.jpg" data-lightbox="roadtrip">
+						<img src="images/lightbox/img-1.jpg" alt="imagen">
+					</a>
+				</div>
+				<div class="gallery-card">
+					<a href="images/lightbox/img-2.jpg" data-lightbox="roadtrip">
+						<img src="images/lightbox/img-2.jpg" alt="imagen">
+					</a>
+				</div>
+				<div class="gallery-card">
+					<a href="images/lightbox/img-3.jpg" data-lightbox="roadtrip">
+						<img src="images/lightbox/img-3.jpg" alt="imagen">
+					</a>
+				</div>
+				<div class="gallery-card">
+					<a href="images/lightbox/img-4.jpg" data-lightbox="roadtrip">
+						<img src="images/lightbox/img-4.jpg" alt="imagen">
+					</a>
+				</div>
+				<div class="gallery-card">
+					<a href="images/lightbox/img-5.jpg" data-lightbox="roadtrip">
+						<img src="images/lightbox/img-5.jpg" alt="imagen">
+					</a>
+				</div>
+				<div class="gallery-card">
+					<a href="images/lightbox/img-6.jpg" data-lightbox="roadtrip">
+						<img src="images/lightbox/img-6.jpg" alt="imagen">
+					</a>
 				</div>
 			</div>
 		</section>
