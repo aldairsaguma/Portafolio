@@ -27,8 +27,13 @@
   top: 0;
   background-size: 30px auto;
   -webkit-background-size: 30px auto;
-  transition: 0.4 ease all;
-  -webkit-transition: 0.4 ease all;
-  -moz-transition: 0.4 ease all;
-  -o-transition: 0.4 ease all;
+  transition: 0.4s ease all;
+  -webkit-transition: 0.4s ease all;
+  -moz-transition: 0.4s ease all;
+  -o-transition: 0.4s ease all;
+}
+.whatsapp-button-active .icon-whatsapp:before {
+  opacity: 0;
+  transform: scale(0) rotate(360deg);
+  -webkit-transform: scale(0) rotate(360deg);
 }
