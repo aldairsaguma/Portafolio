@@ -141,7 +141,7 @@
 					</div>
 					<div>
 						<div class="go-whatsapp">
-							<a class="" href="#">
+							<a class="" href="#" target="_blank">
 								<div class="wsp-link-user">
 									<div class="background-avatar">
 			
@@ -202,7 +202,24 @@
 			// autoplay:true,
 			// autoplayTimeout:1000,
 			// autoplayHoverPause:true,
-			dots:true
+			dots:false,
+			responsive:{
+				0:{
+					items:1,
+					dots:false
+				},
+				768:{
+					items:2
+				},
+				1024:{
+					items:3
+				},
+				1366:{
+					items:4
+				}
+
+
+			}
 		});
 	});
 </script>
