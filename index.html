@@ -10,8 +10,9 @@
 	<!-- Normalize -->
 	<link rel="stylesheet" href="css/style/normalize.css">
 	<!-- Mis estilos  -->
-	<link rel="stylesheet" type="text/css" href="css/style/style.css">
-	<link rel="stylesheet" href="css/style/whatsapp.css">
+	<link rel="stylesheet" href="css/style/css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="css/style/css/style.css">
+	<link rel="stylesheet" href="css/style/css/whatsapp.css">
 	<!-- Font awesome -->
 	<link rel="stylesheet" href="css/fonts/css/all.min.css">
 	<!-- Fuentes de google -->
@@ -39,26 +40,30 @@
 </head>
 <body>
 	<header>
+		<div class="bar-mobile mobile">
+			<a href="#">
+				<i class="fas fa-bars"></i>
+			</a>
+		</div>
 		<nav id="nav-header">
-			<ul class="ul-header">
-				<li>
-					<a href="index.html" title="Hola, bienvenido (:">
-						<span><i class="fab fa-battle-net"></i></span>
-						<span>MI PORTAFOLIO</span>
-						<span><i class="fab fa-battle-net"></i></span>
-					</a>
-				</li>
-				<li>
-					<span>
-						Aldair Saguma
-					</span>
-				</li>
-				<li>
-					<span>
-						Desarrollador Web
-					</span>
-				</li>
-			</ul>
+			<div id="div-ul">
+				<a href="#" id="btn-name" title="Clikeame">Aldair</a>
+				<ul class="ul-header">
+					<li>
+						<a href="index.html" title="Hola, bienvenido (:">
+							<!-- <span><i class="fab fa-battle-net"></i></span> -->
+							<span>Diseños</span>
+							<!-- <span><i class="fab fa-battle-net"></i></span> -->
+						</a>
+					</li>
+					<li>
+						<a class="" href="view/trabajos.html">
+							<span>Trabajos</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			</div>
 		</nav>
 	</header>
 	<div class="body">
@@ -137,7 +142,7 @@
 				</div>
 				<div class="whatsapp-info">
 					<div class="wsp-message">
-						Usualmente respondo en cuestión de segundos
+						Usualmente respondo en cuestión de minutos
 					</div>
 					<div>
 						<div class="go-whatsapp">

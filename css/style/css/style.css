@@ -1,3 +1,13 @@
+@media (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .desktop {
+    display: none;
+  }
+}
 html {
   height: 100%;
   overflow-x: hidden;
@@ -7,41 +17,61 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  background: white;
+  background: #ffffff;
   font-family: 'Open Sans', sans-serif;
   max-width: 1920px;
 }
 .body {
   flex: 1 0 auto;
 }
-#nav-header {
-  display: flex;
-  background: #000;
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
-#nav-header #inicio {
-  display: block;
+header #nav-header {
+  display: flex;
+  background: #000000;
+  padding: 0 15px;
+}
+header #nav-header #div-ul {
+  display: flex;
+  grid-row: 1;
+}
+header #nav-header #div-ul #btn-name {
+  display: flex;
+  align-self: center;
+  margin-right: 2rem;
   font-size: 1.5rem;
+  color: #ffffff;
+  font-weight: 500;
+  font-family: sans-serif;
+  text-decoration: none;
+  font-family: 'OpenSansBold';
 }
-#nav-header .ul-header {
+header #nav-header #div-ul .ul-header {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   padding-left: 0px;
   margin-bottom: 1rem;
   margin-top: 1rem;
-  width: 100%;
 }
-#nav-header .ul-header li {
+header #nav-header #div-ul .ul-header li {
   font-size: 1.5rem;
   width: 100%;
   text-align: center;
   list-style: none;
 }
-#nav-header .ul-header li a {
+header #nav-header #div-ul .ul-header li:first-child {
+  margin-right: 1rem;
+}
+header #nav-header #div-ul .ul-header li a {
   text-decoration: none;
   color: #ffffff;
 }
-#nav-header .ul-header li span {
-  color: #ffffff;
+header #nav-header #div-ul .ul-header li a span {
+  font-family: 'OpenSansSemi';
 }
 .body #section-home {
   margin-right: auto;
@@ -79,12 +109,12 @@ body {
 #galeria #owl-carrousel-gallery .owl-nav .owl-next {
   width: auto;
   height: auto;
-  background: #fff;
-  color: #000;
+  background: #ffffff;
+  color: #000000;
   top: 50%;
   margin-top: -27px;
   position: absolute;
-  border: solid #000 1px;
+  border: solid #000000 1px;
   padding: 0 8px !important;
 }
 #galeria .owl-dots {
@@ -149,7 +179,7 @@ body {
 }
 #section-footer .redes-sociales i {
   font-size: 1.3rem;
-  color: #fff;
+  color: #ffffff;
   line-height: 60px;
 }
 #section-footer .redes-sociales .linkedin {
@@ -165,7 +195,7 @@ body {
   background: #1279D5;
 }
 #section-footer .bottom-footer a {
-  color: #000;
+  color: #000000;
 }
 .body #section-home #galeria {
   max-width: 1522.39px;

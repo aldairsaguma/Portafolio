@@ -1,5 +1,21 @@
 //Variables
 @white: #fff;
+@black:#000;
+@OpenSansBold:'OpenSansBold';
+@OpenSansSemi:'OpenSansSemi';
+@OpenSansRegular:'OpenSansRegular';
+
+//Predeterminadas
+@media(min-width:768px){
+	.mobile{
+		display:none;
+	}
+}
+@media(max-width:767px){
+	.desktop{
+		display:none;
+	}
+}
 
 
 html{
@@ -11,7 +27,7 @@ body{
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
-	background: white;
+	background: @white;
 	font-family:'Open Sans', sans-serif;
 	max-width: 1920px;
 }
@@ -24,32 +40,51 @@ body{
 	// flex-basis: auto;
 }
 // Menu
-#nav-header{
-	display: flex;
-	background: #000;
-	#inicio{
-		display: block;
-		display: block;
-	    font-size: 1.5rem;
-	}
-	.ul-header{
+header{
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	z-index:999;
+	#nav-header{
 		display: flex;
-		flex-direction: column;
-		padding-left: 0px;
-		margin-bottom: 1rem;
-		margin-top: 1rem;
-		width: 100%;
-		li{
-			font-size: 1.5rem;
-			width: 100%;
-			text-align: center;
-			list-style:none;
-			a{
+		background: @black;
+		padding: 0 15px;
+		#div-ul{
+			display:flex;
+			grid-row: 1;
+			#btn-name{
+				display: flex;
+				align-self: center;
+				margin-right: 2rem;
+				font-size: 1.5rem;
+				color: @white;
+				font-weight: 500;
+				font-family: sans-serif;
 				text-decoration: none;
-				color:@white;
+				font-family: @OpenSansBold;
 			}
-			span{
-				color:@white;
+			.ul-header{
+				display: flex;
+				flex-direction: row;
+				padding-left: 0px;
+				margin-bottom: 1rem;
+				margin-top: 1rem;
+				li{
+					font-size: 1.5rem;
+					width: 100%;
+					text-align: center;
+					list-style:none;
+					&:first-child{
+						margin-right: 1rem;
+					}
+					a{
+						text-decoration: none;
+						color:@white;
+						span{
+							font-family: @OpenSansSemi;
+						}
+					}
+				}
 			}
 		}
 	}
@@ -94,13 +129,13 @@ body{
 			.owl-prev,.owl-next{
 				width: auto;
 				height: auto;
-				background: #fff;
-				color:#000;
+				background: @white;
+				color:@black;
 				top: 50%;
 				margin-top: -27px;
 				// transform: translate(-50%, -50%);
 				position: absolute;
-				border:solid #000 1px;
+				border:solid @black 1px;
 				padding: 0 8px !important;
 			}
 		}
@@ -172,7 +207,7 @@ body{
 		}
 		i{
 			font-size: 1.3rem;
-			color: #fff;
+			color: @white;
 			line-height: 60px;
 		}
 		.linkedin{
@@ -195,7 +230,7 @@ body{
 	}
 	.bottom-footer{
 		a{
-			color:#000;
+			color:@black;
 		}
 	}
 }
