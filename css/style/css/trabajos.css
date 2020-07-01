@@ -1,0 +1,63 @@
+@media (min-width: 768px) {
+  .mobile {
+    display: none!important;
+  }
+}
+@media (max-width: 767px) {
+  .desktop {
+    display: none!important;
+  }
+}
+#trabajos {
+  margin-top: 2rem;
+  padding: 0 15px;
+}
+#trabajos .container-trabajos {
+  max-width: 1522.39px;
+  display: grid;
+  grid-gap: 1rem;
+  margin: 0 auto;
+}
+#trabajos .container-trabajos > div {
+  border: solid #000000 1px;
+  position: relative;
+}
+#trabajos .container-trabajos > div .div-to-work .text-for-work {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+  width: 0;
+  transition: .4s ease;
+  -webkit-transition: .4s ease;
+  will-change: transition;
+  font-family: 'OpenSansSemi';
+}
+#trabajos .container-trabajos > div .div-to-work .text-for-work .texto-posicionado {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  will-change: transform;
+  color: #ffffff;
+  padding: 0 15px;
+}
+#trabajos .container-trabajos > div .div-to-work:hover .text-for-work {
+  width: 100%;
+  background: #000000;
+  opacity: .8;
+}
+#trabajos .container-trabajos > div div img {
+  width: 100%;
+  margin: 0 auto;
+}

@@ -1,0 +1,15 @@
+@media (min-width: 768px) {
+  .mobile {
+    display: none!important;
+  }
+}
+@media (max-width: 767px) {
+  .desktop {
+    display: none!important;
+  }
+}
+@media (min-width: 1025px) {
+  #trabajos .container-trabajos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -1,0 +1,25 @@
+//Variables
+@white: #fff;
+@black:#000;
+@OpenSansBold:'OpenSansBold';
+@OpenSansSemi:'OpenSansSemi';
+@OpenSansRegular:'OpenSansRegular';
+
+//Predeterminadas
+@media(min-width:768px){
+	.mobile{
+		display:none!important;
+	}
+}
+@media(max-width:767px){
+	.desktop{
+		display:none!important;
+	}
+}
+@media(min-width:1025px){
+    #trabajos{
+        .container-trabajos{
+            grid-template-columns: repeat(2,1fr);
+        }
+    }
+}
