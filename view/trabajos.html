@@ -31,9 +31,18 @@
 	<!-- Popper -->
 	<script src="../js/popper.min.js"></script>
 </head>
+
+
 <body>
 	<div id="menu-background">
 
+	</div>
+	<div id="mymodal" class="modal desktop">
+		<span class="close">&times;</span>
+		<div class="position-fixed-desktop">
+			<img src="" alt="" class="modal-content" id="modal-img">
+			<div id="caption"></div>
+		</div>
 	</div>
 	<header>
 		<div class="bar-mobile mobile">
@@ -76,10 +85,10 @@
 						<div class="text-for-work">
 							<div class="texto-posicionado">
 								Header fijo, Se uso Jquery con Css3.
-								<a href="#">Cick</a>
+								<a href="javascript:void(0)" class="view-image">ver imagen</a>
 							</div>
 						</div>
-						<img src="../images/trabajos/trabajo-1.png" alt="">
+						<img class="my-img" src="../images/trabajos/trabajo-1.png" alt="Header fijo, Se uso Jquery con Css3.">
 					</div>
 				</div>
 				<div>
@@ -87,10 +96,10 @@
 						<div class="text-for-work">
 							<div class="texto-posicionado">
 								Se uso el plugin OwlCarrousel, Css3 para animaciones adicionales y Jquery.
-								<a href="#">Cick</a>
+								<a href="javascript:void(0)" class="view-image">Ver imagen</a>
 							</div>
 						</div>
-						<img src="../images/trabajos/trabajo-2.png" alt="">
+						<img class="my-img" src="../images/trabajos/trabajo-2.png" alt="Se uso el plugin OwlCarrousel, Css3 para animaciones adicionales y Jquery.">
 					</div>
 				</div>
 				<!-- <div>
@@ -179,8 +188,3 @@
 	</footer>
 </body>
 </html>
-<script>
-	$(function(){
-		
-	});
-</script>

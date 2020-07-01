@@ -57,7 +57,40 @@
   background: #000000;
   opacity: .8;
 }
+#trabajos .container-trabajos > div .div-to-work .view-image {
+  color: #ffffff;
+  font-family: <qOpenSansBold;
+}
 #trabajos .container-trabajos > div div img {
   width: 100%;
   margin: 0 auto;
+}
+#mymodal {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+#mymodal .close {
+  cursor: pointer;
+  color: #ffffff;
+  opacity: 1;
+  font-size: 3.5rem;
+  position: relative;
+  right: 30px;
+  top: 26px;
+}
+#mymodal #modal-img {
+  margin: 0 auto;
+}
+#mymodal #caption {
+  color: #ffffff;
+  display: block;
+  margin: auto;
+  padding-top: 15px;
+  font-family: 'OpenSansRegular', sans-serif;
+}
+#mymodal #caption,
+#mymodal #modal-img {
+  animation-name: zoom ;
+  -webkit-animation-name: zoom;
+  -moz-animation-name: zoom;
+  animation-duration: .6s;
 }

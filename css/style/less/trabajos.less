@@ -1,9 +1,9 @@
 //Variables
 @white: #fff;
 @black:#000;
-@OpenSansBold:'OpenSansBold';
-@OpenSansSemi:'OpenSansSemi';
-@OpenSansRegular:'OpenSansRegular';
+@OpenSansBold:'OpenSansBold',sans-serif;
+@OpenSansSemi:'OpenSansSemi',sans-serif;
+@OpenSansRegular:'OpenSansRegular',sans-serif;
 
 //Predeterminadas
 @media(min-width:768px){
@@ -69,6 +69,10 @@
                     background: @black;
                     opacity: .8;
                 }
+                .view-image{
+                    color:@white;
+                    font-family: <qOpenSansBold;
+                }
             }
             div{
                 img{
@@ -77,5 +81,37 @@
                 }
             }
         }
+    }
+}
+
+//Modal 
+#mymodal{
+    background-color: rgba(0,0,0,0.9);
+    .close{
+        cursor: pointer;
+        color: @white;
+        opacity: 1;
+        font-size: 3.5rem;
+        position: relative;
+        right: 30px;
+        top: 26px;
+    }
+    #modal-img{
+        margin: 0 auto;
+    }
+    #caption{
+        color: @white;
+        display: block;
+        margin: auto;
+        padding-top: 15px;
+        font-family: @OpenSansRegular;
+    }
+    #caption, #modal-img{
+        animation-name:zoom ;
+        -webkit-animation-name: zoom;
+        -moz-animation-name: zoom;
+        animation-duration: .6s;
+        // Ejecuta indefinidamente
+        // animation-iteration-count: infinite;
     }
 }

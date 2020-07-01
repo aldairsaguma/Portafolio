@@ -16,6 +16,47 @@
 		display:none!important;
 	}
 }
+
+@media(min-width:1200px){
+	#mymodal{
+		#modal-img,#caption{
+			max-width: 1100px;
+			width: 100%;
+		}
+	}
+}
+@media(min-width:768px) and (max-width:1024px){
+	#modal-img,#caption{
+		width: 95%;
+	}
+}
+@media(min-width:768px){
+	#mymodal{
+		.position-fixed-desktop{
+			width: 100%;
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			-webkit-transform: translate(-50%, -50%);
+			will-change: transform;
+		}
+	}
+	@keyframes zoom {
+		from{
+			transform: scale(0);
+		}to{
+			transform: scale(1);
+		}
+	}
+	@-webkit-keyframes zoom{
+		from{
+			transform: scale(0);
+		}to{
+			transform: scale(1);
+		}
+	}
+}
 @media(min-width:1025px){
     #trabajos{
         .container-trabajos{
