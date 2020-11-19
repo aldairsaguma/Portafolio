@@ -21,7 +21,7 @@ window.onload = function(){
 
     //Modal para imagenes en trabajos.html
 
-    //Obtenermos el ID del modal
+    //Obtenemos el ID del modal
     const modal = document.getElementById("mymodal");
 
     //Obtenemos la imagen y la insertamos adentro del modal
@@ -40,13 +40,5 @@ window.onload = function(){
             captionText.innerHTML = this.parentElement.parentElement.nextElementSibling.alt; 
         });
     }
-
-    //Obtenemos la clase de la etiqueta span para cerrar la el modal
-    let spanClose = document.getElementsByClassName("close")[0];
-    spanClose.addEventListener("click",function(){
-        modal.style.display="none";
-    });
-
-
 
 }
