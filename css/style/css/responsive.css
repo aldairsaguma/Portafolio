@@ -15,7 +15,10 @@
   header #nav-header #div-ul .ul-header {
     flex-direction: row;
   }
-  .content-header, .body, .section-header{
+  .content-header,
+  .body,
+  #section-footer {
+    max-width: 1920px;
     margin: 0 auto;
   }
 }
@@ -25,13 +28,13 @@
     flex-direction: column;
   }
   header .bar-mobile {
-    background: #000000;
+    background: #000;
     padding: 10px 0;
     display: flex;
     flex-direction: row;
   }
   header .bar-mobile div {
-    width: calc(50%);
+    width: calc(100% / 2);
   }
   header .bar-mobile > div:first-child > a:first-child {
     font-family: 'OpenSansBold';
@@ -53,7 +56,7 @@
     align-items: center;
     justify-content: center;
     float: right;
-    background: #000000;
+    background: #000;
     color: #ffffff;
     font-size: 1.5rem;
     border: solid #535353 1px;
@@ -68,8 +71,8 @@
     opacity: 0;
     visibility: hidden;
     overflow: hidden;
-    transition: height .3s linear;
-    -webkit-transition: height .3s linear;
+    transition: height 0.3s linear;
+    -webkit-transition: height 0.3s linear;
     will-change: transition;
   }
   header .nav-header #div-ul {
@@ -89,9 +92,6 @@
     opacity: 1;
     visibility: visible;
     padding: 0 15px 15px 15px;
-  }
-  #nav-header{
-    background-color: #000000;
   }
 }
 /*Galeria lightbox*/

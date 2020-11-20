@@ -1,6 +1,6 @@
 window.onload = function(){
     //Abrir botón whatsapp
-    const whatsapp = document.getElementById("icon-whatsapp");
+    const whatsapp = document.querySelector(".icon-whatsapp");
     whatsapp.addEventListener("click",function(e){
         this.parentElement.classList.toggle("whatsapp-button-active");
     });
@@ -40,5 +40,11 @@ window.onload = function(){
             captionText.innerHTML = this.parentElement.parentElement.nextElementSibling.alt; 
         });
     }
-
+    //Obtenemos la clase de la etiqueta span para cerrar la el modal
+    let spanClose = document.querySelector(".close");
+    if(spanClose){
+        spanClose.addEventListener("click",function(){
+            modal.style.display="none";
+        });
+    }
 }

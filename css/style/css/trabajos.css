@@ -19,7 +19,7 @@
   margin: 0 auto;
 }
 #trabajos .container-trabajos > div {
-  border: solid #000000 1px;
+  border: solid #000 1px;
   position: relative;
 }
 #trabajos .container-trabajos > div .div-to-work .text-for-work {
@@ -30,8 +30,8 @@
   left: 0;
   overflow: hidden;
   width: 0;
-  transition: .4s ease;
-  -webkit-transition: .4s ease;
+  transition: 0.4s ease;
+  -webkit-transition: 0.4s ease;
   will-change: transition;
   font-family: 'OpenSansSemi';
 }
@@ -49,17 +49,17 @@
   justify-content: center;
   overflow: hidden;
   will-change: transform;
-  color: #ffffff;
+  color: #fff;
   padding: 0 15px;
 }
 #trabajos .container-trabajos > div .div-to-work:hover .text-for-work {
   width: 100%;
-  background: #000000;
-  opacity: .8;
+  background: #000;
+  opacity: 0.8;
 }
 #trabajos .container-trabajos > div .div-to-work .view-image {
-  color: #ffffff;
-  font-family: <qOpenSansBold;
+  color: #fff;
+  font-family: 'OpenSansBold', sans-serif;
 }
 #trabajos .container-trabajos > div div img {
   width: 100%;
@@ -70,7 +70,7 @@
 }
 #mymodal .close {
   cursor: pointer;
-  color: #ffffff;
+  color: #fff;
   opacity: 1;
   font-size: 3.5rem;
   position: relative;
@@ -81,7 +81,7 @@
   margin: 0 auto;
 }
 #mymodal #caption {
-  color: #ffffff;
+  color: #fff;
   display: block;
   margin: auto;
   padding-top: 15px;
@@ -92,5 +92,5 @@
   animation-name: zoom ;
   -webkit-animation-name: zoom;
   -moz-animation-name: zoom;
-  animation-duration: .6s;
+  animation-duration: 0.6s;
 }
