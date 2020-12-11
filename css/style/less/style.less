@@ -28,11 +28,6 @@ body{
 	display: flex;
 	flex-direction: column;
 	background: @white;
-	// font-family:'Open Sans', sans-serif;
-}
-
-.content-header, .body, #section-footer{
-	max-width: 1920px;
 }
 
 .body{
@@ -106,6 +101,7 @@ header{
 }
 // Galeria
 #galeria{
+	padding: 0 15px;
 	.gallery-title{
 		margin-top: 20px;
 		margin-bottom: 20px;
@@ -139,7 +135,6 @@ header{
 				color:@black;
 				top: 50%;
 				margin-top: -27px;
-				// transform: translate(-50%, -50%);
 				position: absolute;
 				border:solid @black 1px;
 				padding: 0 8px !important;
@@ -196,7 +191,6 @@ header{
 
 // Footer
 #section-footer{
-	// background: #212121;
 	padding-top: 30px;
 	padding-bottom: 30px;
 	.redes-sociales{
@@ -243,16 +237,12 @@ header{
 }
 
 .body{
-	#section-home{
-		#galeria{
-			// max-width: 1522.39px;
-		}
+	.wrapper{
+		max-width: 1522.39px;
+		margin: 0 auto;
 	}
 	#section-gallery-lightbox{
 		padding:0 15px;
-		#gallery-title, #gallery-container{
-			max-width: 1522.39px;
-		}
 		#gallery-title{
 			font-family: @OpenSansBold;
 		}

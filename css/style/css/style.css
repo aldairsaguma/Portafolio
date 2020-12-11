@@ -19,11 +19,6 @@ body {
   flex-direction: column;
   background: #fff;
 }
-.content-header,
-.body,
-#section-footer {
-  max-width: 1920px;
-}
 .body {
   flex: 1 0 auto;
 }
@@ -81,6 +76,9 @@ header #nav-header {
   margin-right: auto;
   margin-left: auto;
   box-sizing: border-box;
+}
+#galeria {
+  padding: 0 15px;
 }
 #galeria .gallery-title {
   margin-top: 20px;
@@ -203,12 +201,12 @@ header #nav-header {
   color: 'OpenSansSemi';
   font-family: 'OpenSansRegular';
 }
+.body .wrapper {
+  max-width: 1522.39px;
+  margin: 0 auto;
+}
 .body #section-gallery-lightbox {
   padding: 0 15px;
-}
-.body #section-gallery-lightbox #gallery-title,
-.body #section-gallery-lightbox #gallery-container {
-  max-width: 1522.39px;
 }
 .body #section-gallery-lightbox #gallery-title {
   font-family: 'OpenSansBold';
